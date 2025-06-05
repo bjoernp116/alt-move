@@ -5,6 +5,7 @@ run-shell -b '
 get_opt() {
     tmux show-option -gqv "$1"
 }
+
 # Left
 bind_left=$(get_opt "@smart-alt-arrows-left")
 [ -z "$bind_left" ] && bind_left="M-Left"
